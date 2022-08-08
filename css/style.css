@@ -1,0 +1,122 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Very-dark-blue-main-bg);
+}
+
+/* General Border */
+.main {
+    border: 2px solid var(--Very-dark-blue-line);
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    background-color: var(--Very-dark-blue-card-bg);
+}
+
+.main__image {
+    width: 330px;
+    height: 300px;
+    margin: 25px 25px 0 25px;
+    background-color: red;
+}
+
+/* Description */
+
+.main__description {
+    margin: 0 25px;
+}
+
+.main__description h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.main__description p {
+    font-weight: 400;
+    color: var(--Soft-blue);
+}
+
+/* Details */
+
+.main__general {
+    width: calc(350px - 50px);
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--Very-dark-blue-main-bg);
+}
+
+.main__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__details--division {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__value {
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 0.90rem;
+    color: var(--Cyan);
+}
+
+.main__time {
+    margin-left: 5px;
+    font-size: 0.80rem;
+    font-weight: 400;
+    color: var(--Soft-blue);
+}
+
+/* Creator */
+
+.main__creator {
+    display: flex;
+    align-items: center;
+    width: calc(350px - 50px);
+    margin: 15px 0 25px 0;
+}
+
+.main__creator--image {
+    width: 40px;
+    border: 3px solid red;
+    border-radius: 100%;
+}
+
+.main__creator--text {
+    margin-left: 15px;
+    font-size: 0.90rem;
+    font-weight: 400;
+    color: var(--Soft-blue);
+}
+
+.main__creator--text span {
+    font-size: 0.90rem;
+    font-weight: 400;
+    color: var(--White);
+}
