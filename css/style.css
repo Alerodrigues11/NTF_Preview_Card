@@ -22,24 +22,45 @@ body {
     align-items: center;
     height: 100vh;
     background-color: var(--Very-dark-blue-main-bg);
+    
 }
 
 /* General Border */
 .main {
-    border: 2px solid var(--Very-dark-blue-line);
-    display: flex;
+    border: 2px solid var(--Very-dark-blue-main-bg);
+    border-radius: 15px;
+    box-shadow: 0px 37px 0 15px rgb(12, 23, 41), 0px 25px 0px 50px rgba(12, 25, 44, 0.95);
+    
+    background-color: var(--Very-dark-blue-card-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;
-    background-color: var(--Very-dark-blue-card-bg);
+    max-width: 350px;  
 }
 
 .main__image {
-    width: 330px;
+    position: relative;
+}
+
+.main__image--nft {
+    width: 300px;
     height: 300px;
     margin: 25px 25px 0 25px;
-    background-color: red;
+    border-radius: 10px;
+}
+
+.main__image--icon {
+    position: absolute;
+    top: 0;
+    background-image: url(/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    width: 300px;
+    height: 300px;
+    margin: 25px 25px 0 25px;
+    border-radius: 10px;
+    opacity: 0;
 }
 
 /* Description */
@@ -52,10 +73,11 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     margin: 20px 0;
+    color: var(--White);
 }
 
 .main__description p {
-    font-weight: 400;
+    font-weight: 300;
     color: var(--Soft-blue);
 }
 
@@ -64,7 +86,7 @@ body {
 .main__general {
     width: calc(350px - 50px);
     padding: 20px 0px;
-    border-bottom: 1px solid var(--Very-dark-blue-main-bg);
+    border-bottom: 1px solid var(--Very-dark-blue-line);
 }
 
 .main__details {
@@ -104,7 +126,7 @@ body {
 
 .main__creator--image {
     width: 40px;
-    border: 3px solid red;
+    border: 1px solid var(--White);
     border-radius: 100%;
 }
 
@@ -120,3 +142,22 @@ body {
     font-weight: 400;
     color: var(--White);
 }
+
+/* HOVER */
+
+.main__description h2:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.main__creator--text span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.main__image--icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
