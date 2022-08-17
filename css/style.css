@@ -29,13 +29,13 @@ body {
 .main {
     border: 2px solid var(--Very-dark-blue-main-bg);
     border-radius: 15px;
-    box-shadow: 0px 37px 0 15px rgb(12, 23, 41), 0px 25px 0px 50px rgba(12, 25, 44, 0.95);
+    box-shadow: 0px 25px 0 12px rgb(12, 23, 41), 0px 25px 0px 50px rgba(12, 25, 44, 0.95);
     
     background-color: var(--Very-dark-blue-card-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;  
+    max-width: 325px;
 }
 
 .main__image {
@@ -43,8 +43,8 @@ body {
 }
 
 .main__image--nft {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     margin: 25px 25px 0 25px;
     border-radius: 10px;
 }
@@ -66,7 +66,7 @@ body {
 /* Description */
 
 .main__description {
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 .main__description h2 {
@@ -78,13 +78,14 @@ body {
 
 .main__description p {
     font-weight: 300;
+    font-size: 16px;
     color: var(--Soft-blue);
 }
 
 /* Details */
 
 .main__general {
-    width: calc(350px - 50px);
+    width: calc(325px - 50px);
     padding: 20px 0px;
     border-bottom: 1px solid var(--Very-dark-blue-line);
 }
@@ -120,7 +121,7 @@ body {
 .main__creator {
     display: flex;
     align-items: center;
-    width: calc(350px - 50px);
+    width: calc(325px - 50px);
     margin: 15px 0 25px 0;
 }
 
@@ -143,21 +144,74 @@ body {
     color: var(--White);
 }
 
+/* FOOTER */
+
+.attribution {
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 0;
+
+    font-size: 12px;
+    color: var(--Soft-blue);
+}
+
+.attribution a {
+    font-size: 12px;
+}
+
+
 /* HOVER */
 
 .main__description h2:hover {
     color: var(--Cyan);
     cursor: pointer;
+    
+    transition-duration: 0.4s;
 }
 
 .main__creator--text span:hover {
     color: var(--Cyan);
     cursor: pointer;
+
+    transition-duration: 0.4s;
 }
 
 .main__image--icon:hover {
     opacity: 1;
     cursor: pointer;
+
+    transition-duration: 0.4s;
 }
 
+@media screen and (min-width: 780px) {
+    .main {
+        max-width: 350px;
+    }
 
+    .main__image--nft {
+        width: 300px;
+        height: 300px;
+    }
+
+    .main__image--icon {
+        width: 300px;
+        height: 300px;
+    }
+
+    .main__general {
+        width: calc(350px - 50px)
+    }
+
+    .main__creator {
+        width: calc(350px - 50px)
+    }
+
+    .attribution {
+        font-size: 0.75rem;
+    }
+    
+    .attribution a {
+        font-size: 0.75rem;
+    }
+}
