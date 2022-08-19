@@ -14,15 +14,25 @@
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
+<body class="dark__mode--body">
+  <div class="dark__mode">
+    <input type="checkbox" class="checkbox" id="chk"/>
+
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </div>
+
   <div class="main">
     <div class="main__image">
       <img src="./images/image-equilibrium.jpg" class="main__image--nft" alt="#">
       <div class="main__image--icon"></div>
     </div>
     <div class="main__description">
-      <h2>Equilibrium #3429</h2>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <h2 class="main__description--title">Equilibrium #3429</h2>
+      <p class="main__description--text">Our Equilibrium collection promotes balance and calm.</p>
     </div>
     
     <div class="main__general">
@@ -42,7 +52,7 @@
 
     <div class="main__creator">
       <img src="./images/image-avatar.png" class="main__creator--image" alt="#">
-      <p class="main__creator--text">Creation of <span>Jules Wyvern</span></p>
+      <p class="main__creator--text">Creation of <span class="main__creator--name">Jules Wyvern</span></p>
     </div>
   </div>
 
@@ -51,5 +61,7 @@
     Coded by <a href="#">Alexandre</a>.
   </div>
 
+  <script src="/Javascript/script.js"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>
