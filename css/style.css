@@ -52,7 +52,7 @@
 .main__image--icon {
     position: absolute;
     top: 0;
-    background-image: url(/images/icon-view.svg);
+    background-image: url(../images/icon-view.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: hsla(178, 100%, 50%, 0.5);
